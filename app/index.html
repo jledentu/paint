@@ -1,0 +1,113 @@
+<!doctype html>
+<html class="no-js">
+	<head>
+		<meta charset="utf-8">
+		<title>paint</title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width">
+		<link rel="shortcut icon" href="/favicon.ico">
+		<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+		<!-- build:css(.) styles/vendor.css -->
+		<!-- bower:css -->
+		<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+		<link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css" />
+		<!-- endbower -->
+		<!-- endbuild -->
+		<!-- build:css(.tmp) styles/main.css -->
+		<link rel="stylesheet" href="styles/main.css">
+		<!-- endbuild -->
+		<!-- build:js scripts/vendor/modernizr.js -->
+		<script src="bower_components/modernizr/modernizr.js"></script>
+		<!-- endbuild -->
+
+	</head>
+	<body>
+		<!--[if lt IE 10]>
+			<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+		<![endif]-->
+
+		<nav class="navbar navbar-default navbar-fixed-top navbar-inverse" role="navigation">
+			<div class="container-fluid">
+				<ul id="tools" class="nav navbar-nav">
+					<li class="active"><a href="#" data-tool="brush"><i class="fa fa-paint-brush fa-lg"></i></a></li>
+					<li><a href="#" data-tool="eraser"><i class="fa fa-eraser fa-lg"></i></a></li>
+					<li><a href="#" data-tool="colorpicker"><i class="fa fa-eyedropper fa-lg"></i></a></li>
+				</ul>
+
+				<ul class="nav navbar-nav navbar-right">
+					<li id="color-menu" class="dropdown">
+						<a id="forecolor-button" href="#" class="dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+							<i class="fa fa-square fa-lg"></i>
+							<span class="caret"></span>
+						</a>
+						<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+							<li>
+								<a role="menuitem" tabindex="-1" href="#" class="colorbutton" style="background-color: orange" data-color="orange"></a>
+							</li>
+							<li>
+								<a role="menuitem" tabindex="-1" href="#" class="colorbutton" style="background-color: red" data-color="red"></a>
+							</li>
+							<li>
+								<a role="menuitem" tabindex="-1" href="#" class="colorbutton" style="background-color: blue" data-color="blue"></a>
+							</li>
+							<li>
+								<a role="menuitem" tabindex="-1" href="#" class="colorbutton" style="background-color: yellow" data-color="yellow"></a>
+							</li>
+							<li>
+								<a role="menuitem" tabindex="-1" href="#" class="colorbutton" style="background-color: green" data-color="green"></a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</nav>
+
+		<div id="paintarea">
+			<div id="canvasarea">
+				<canvas id="canvas" width="700" height="500"></canvas>
+			</div>
+		</div>
+
+		<!-- build:js(.) scripts/vendor.js -->
+		<!-- bower:js -->
+		<script src="bower_components/jquery/dist/jquery.js"></script>
+		<!-- endbower -->
+		<!-- endbuild -->
+
+		<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+		<script>
+			(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+			function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+			e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+			e.src='//www.google-analytics.com/analytics.js';
+			r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+			ga('create','UA-XXXXX-X');ga('send','pageview');
+		</script>
+
+				<!-- build:js(.) scripts/plugins.js -->
+				<script src="bower_components/bootstrap/js/affix.js"></script>
+				<script src="bower_components/bootstrap/js/alert.js"></script>
+				<script src="bower_components/bootstrap/js/dropdown.js"></script>
+				<script src="bower_components/bootstrap/js/tooltip.js"></script>
+				<script src="bower_components/bootstrap/js/modal.js"></script>
+				<script src="bower_components/bootstrap/js/transition.js"></script>
+				<script src="bower_components/bootstrap/js/button.js"></script>
+				<script src="bower_components/bootstrap/js/popover.js"></script>
+				<script src="bower_components/bootstrap/js/carousel.js"></script>
+				<script src="bower_components/bootstrap/js/scrollspy.js"></script>
+				<script src="bower_components/bootstrap/js/collapse.js"></script>
+				<script src="bower_components/bootstrap/js/tab.js"></script>
+				<!-- endbuild -->
+
+				<!-- build:js({app,.tmp}) scripts/main.js -->
+				<script src="scripts/main.js"></script>
+				<script src="scripts/lib/colorset.js"></script>
+				<script src="scripts/lib/canvas.js"></script>
+				<script src="scripts/lib/tools/tool.js"></script>
+				<script src="scripts/lib/tools/brush.js"></script>
+				<script src="scripts/lib/tools/bucket.js"></script>
+				<script src="scripts/lib/tools/eraser.js"></script>
+				<script src="scripts/lib/tools/colorpicker.js"></script>
+				<!-- endbuild -->
+</body>
+</html>

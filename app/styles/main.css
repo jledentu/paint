@@ -1,0 +1,47 @@
+body {
+	background: #bbb;
+}
+
+#paintarea
+{
+	margin: 0;
+	position: relative;
+	z-index: 0;
+}
+
+#canvasarea
+{
+	display: block;
+	background: url('../images/canvas_bkg.png');
+	width: 700px;
+	height: 500px;
+	margin: auto;
+	margin-top: 60px;
+	position: relative;
+	border: solid 1px #777;
+}
+
+canvas
+{
+	position: absolute;
+}
+
+#color-menu .dropdown-menu {
+	min-width: 0;
+}
+
+#tools .fa
+{
+	pointer-events: none;
+}
+
+a.colorbutton
+{
+	display: block;
+	width: 56px;
+	height: 20px;
+	color: transparent;
+	margin: 5px;
+	text-decoration: none;
+	cursor: pointer;
+}
