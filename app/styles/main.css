@@ -30,6 +30,11 @@ canvas
 	min-width: 0;
 }
 
+#tools a:focus
+{
+	outline: none;
+}
+
 #tools .fa
 {
 	pointer-events: none;
